@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Estructura del TeleRobot</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}"/>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet"/>
+</head>
+<body class="d-flex flex-column">
+<main class="flex-shrink-0">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container px-5">
+            <a class="navbar-brand" href="{% url 'index' %}">Proyecto Integrador de Saberes</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Componentes</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="{% url 'componentes' %}">Motor Paso a Paso</a></li>
+                        <li><a class="dropdown-item" href="{% url 'componentes' %}">Servomotor</a></li>
+                        <li><a class="dropdown-item" href="{% url 'componentes' %}">Esp32Cam</a></li>
+                        <li><a class="dropdown-item" href="{% url 'componentes' %}">Sensor de Peso</a></li>
+                        <li><a class="dropdown-item" href="{% url 'componentes' %}">Encoder</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Estructura</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                        <li><a class="dropdown-item" href="{% url 'estructura' %}">Base</a></li>
+                        <li><a class="dropdown-item" href="{% url 'estructura' %}">Antebrazo</a></li>
+                        <li><a class="dropdown-item" href="{% url 'estructura' %}">Pinza</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Creadores</a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                        <li><a class="dropdown-item" href="https://www.instagram.com/shortout3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Jimmy Ontaneda</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/arisss.sst?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Ariana Sarango</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/nikooll__c?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Nikooll Camacho</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/gabrielr._17/?utm_source=ig_web_button_share_sheet" target="_blank">Gabriel Cevallos</a></li>
+                        <li><a class="dropdown-item" href="https://www.instagram.com/panchojaramilloc?igsh=c3J2Y3MxNG0xbmo3&utm_source=qr" target="_blank">Francisco Jaramillo</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <section class="py-5">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-3">
+                    <div class="d-flex align-items-center mt-lg-5 mb-4">
+                        <img class="img-fluid rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg"
+                             alt="..."/>
+                        <div class="ms-3">
+                            <div class="fw-bold">Valerie Luna</div>
+                            <div class="text-muted">News, Business</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <!-- Post content-->
+                    <article>
+                        <!-- Post header-->
+                        <header class="mb-4">
+                            <!-- Post title-->
+                            <h1 class="fw-bolder mb-1">TeleRobot</h1>
+                            <!-- Post meta content-->
+                            <div class="text-muted fst-italic mb-2">Universidad Nacional de Loja</div>
+                        </header>
+                        <!-- Contenido TeleRobot-->
+                        <section class="mb-5">
+                            <p class="fs-5 mb-4">El Proyecto Integrador de Saberes se enfoca en la creación de un brazo
+                                robótico con la capacidad de recoger desechos tóxicos y depositarlos en un contenedor de
+                                basura, con el propósito de proteger la salud y evitar contacto con objetos
+                                corrosivos.</p>
+                            <p class="fs-5 mb-4"> Además de integrar los conocimientos adquiridos durante el segundo
+                                ciclo académico de la carrera de computación, este proyecto busca enriquecer el
+                                aprendizaje de los estudiantes al aplicar dichos conocimientos en una práctica de mayor
+                                complejidad.</p>
+                            <p class="fs-5 mb-4">Se puede definir un brazo robótico como robots articulados, debido a
+                                que es un brazo construido y elaborado con estructuras de carácter flexible y
+                                conformadas por articulaciones adaptables que permiten ejecutar un amplio rango de
+                                movimientos y funciones simulando un brazo humano. También es un dispositivo
+                                programable, a través del cual, cumple las funciones mencionadas anteriormente.</p>
+                            <!-- Base -->
+                            <h2 class="fw-bolder mb-4 mt-5">Base</h2>
+                            <p class="fs-5 mb-4">La base es la estructura fundamental que soporta todo el brazo
+                                robótico. Su diseño debe proporcionar estabilidad y resistencia para soportar el peso y
+                                las fuerzas generadas durante el movimiento de la pinza.</p>
+                            <p class="fs-5 mb-4">La base tendrá un motor paso a paso el cual va a permitir el movimiento
+                                libre de nuestro TeleRobot.Se eligen materiales robustos y resistentes que puedan
+                                soportar el peso del brazo robótico y proporcionar una plataforma estable para su
+                                funcionamiento, en este caso, utilizamos madera.</p>
+                            <!-- AnteBrazo -->
+                            <h2 class="fw-bolder mb-4 mt-5">Antebrazo</h2>
+                            <p class="fs-5 mb-4">El antebrazo es la parte intermedia del brazo robótico que conecta la
+                                base con la pinza. Debe ser lo suficientemente fuerte para soportar el peso de la pinza
+                                y cualquier objeto que ésta manipule, al mismo tiempo que debe permitir movimientos
+                                precisos y flexibles.</p>
+                            <p class="fs-5 mb-4">El antebrazo está diseñado para proporcionar movilidad al brazo
+                                robótico, por lo cual, tendrá un servomotor el cual va a permitir un movimiento
+                                de 180 grados a nuestro TeleRobot.El antebrazo puede tener una estructura segmentada con
+                                articulaciones que permiten un rango de movimiento más amplio.</p>
+                            <!--  Pinza -->
+                            <h2 class="fw-bolder mb-4 mt-5">Pinza</h2>
+                            <p class="fs-5 mb-4">La pinza es la parte final del brazo robótico que es responsable de
+                                agarrar, sostener y manipular objetos, por lo tanto, va a tener un peso máximo que va a
+                                poder cargar. Sin embargo, en PacoSolutions siempre buscaremos el mejor desarrollo para
+                                nuestros proyectos precisos y flexibles.</p>
+                            <p class="fs-5 mb-4">La pinza tendrá un servomotor el cual va a permitir un movimiento
+                                que abrirá y cerrará sus "patas" para poder agarrar objetos.La pinza mantiene un
+                                diseño versátil que permite recoger una amplia variedad de objetos</p>
+                        </section>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<!-- Footer-->
+<footer class="bg-dark py-4 mt-auto">
+    <div class="container px-5">
+        <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="col-auto">
+                <div class="small m-0 text-white">Copyright &copy; Your Website 2023</div>
+            </div>
+            <div class="col-auto">
+                <a class="link-light small" href="#!">Privacy</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Terms</a>
+                <span class="text-white mx-1">&middot;</span>
+                <a class="link-light small" href="#!">Contact</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{% static 'js/scripts.js' %}"></script>
+</body>
+</html>

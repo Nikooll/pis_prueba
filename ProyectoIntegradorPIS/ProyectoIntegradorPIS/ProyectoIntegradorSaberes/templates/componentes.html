@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Componentes</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico'%}" />
+        <!-- Bootstrap icons-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css'%}" rel="stylesheet" />
+    </head>
+    <body class="d-flex flex-column">
+        <main class="flex-shrink-0">
+            <!-- Navigation-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container px-5">
+                    <a class="navbar-brand" href="{% url 'index' %}">Proyecto Integrador de Saberes</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Componentes</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="{% url 'componentes' %}">Motor Paso a Paso</a></li>
+                                <li><a class="dropdown-item" href="{% url 'componentes' %}">Servomotor</a></li>
+                                <li><a class="dropdown-item" href="{% url 'componentes' %}">Esp32Cam</a></li>
+                                <li><a class="dropdown-item" href="{% url 'componentes' %}">Sensor de Peso</a></li>
+                                <li><a class="dropdown-item" href="{% url 'componentes' %}">Encoder</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownBlog" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Estructura</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownBlog">
+                                <li><a class="dropdown-item" href="{% url 'estructura' %}">Base</a></li>
+                                <li><a class="dropdown-item" href="{% url 'estructura' %}">Antebrazo</a></li>
+                                <li><a class="dropdown-item" href="{% url 'estructura' %}">Pinza</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="navbarDropdownPortfolio" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Creadores</a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownPortfolio">
+                                <li><a class="dropdown-item" href="https://www.instagram.com/shortout3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Jimmy Ontaneda</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/arisss.sst?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Ariana Sarango</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/nikooll__c?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Nikooll Camacho</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/gabrielr._17/?utm_source=ig_web_button_share_sheet" target="_blank">Gabriel Cevallos</a></li>
+                                <li><a class="dropdown-item" href="https://www.instagram.com/panchojaramilloc?igsh=c3J2Y3MxNG0xbmo3&utm_source=qr" target="_blank">Francisco Jaramillo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+            <!-- Contendido-->
+            <section class="py-5">
+                <!-- Motor paso-->
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4">Motor Paso a Paso</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-lg-8 py-lg-5">
+                                    <div class="p-4 p-md-5">
+                                        <div class="h2 fw-bolder">Motor Paso a Paso</div>
+                                        <p>Un motor paso a paso es un dispositivo electromecánico que convierte pulsos eléctricos en movimientos mecánicos discretos. Este tipo de motor se utiliza ampliamente en aplicaciones donde se requiere un control preciso de la posición y la velocidad, como en impresoras 3D, robots, sistemas de automatización industrial, y dispositivos CNC (control numérico por computadora).</p>
+                                        <a class="stretched-link text-decoration-none" href="https://www.alldatasheet.com/datasheet-pdf/pdf/1572377/ETC/NEMA17.html" target="_blank">
+                                            Read more
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                                    <div class="bg-featured-blog" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOKicizL1DTINPnVM65UdqgOVjJYHCAeTcrQ&s'); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Servomotor-->
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4">Servomotor</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-lg-8 py-lg-5">
+                                    <div class="p-4 p-md-5">
+                                        <div class="h2 fw-bolder">Servomotor</div>
+                                        <p>Un servomotor es un tipo de motor que se utiliza para controlar con precisión el movimiento angular de un eje. A diferencia de los motores paso a paso, los servomotores pueden girar continuamente en cualquier dirección dentro de un rango específico de ángulos y pueden mantener una posición estable en una ubicación deseada.</p>
+                                        <a class="stretched-link text-decoration-none" href="https://www.alldatasheet.es/datasheet-pdf/pdf/1572383/ETC/SG90.html" target="_blank">
+                                            Read more
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                                    <div class="bg-featured-blog" style="background-image: url('https://kajabi-storefronts-production.kajabi-cdn.com/kajabi-storefronts-production/blogs/2147494123/images/CCDTMzkQrGZ5goHvgzEw_final-dl.beatsnoop.com-eGZHQ1J5Sr_1.jpg'); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Esp32Cam-->
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4">Esp32Cam</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-lg-8 py-lg-5">
+                                    <div class="p-4 p-md-5">
+                                        <div class="h2 fw-bolder">Esp32Cam</div>
+                                        <p>El ESP32-CAM es un módulo de desarrollo que combina un microcontrolador ESP32 y una cámara OV2640 en un solo chip. Esto permite a los desarrolladores crear proyectos de IoT (Internet de las cosas) que incluyan capacidades de visión, como la captura de imágenes o la transmisión de video a través de Wi-Fi.</p>
+                                        <a class="stretched-link text-decoration-none" href="https://media.digikey.com/pdf/Data%20Sheets/DFRobot%20PDFs/DFR0602_Web.pdf" target="_blank">
+                                            Read more
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                                    <div class="bg-featured-blog" style="background-image: url('https://cdn11.bigcommerce.com/s-am5zt8xfow/images/stencil/1280x1280/products/2491/6931/02__57678.1608670560.jpg?c=2'); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Sensor de Peso-->
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4">Sensor de Peso</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-lg-8 py-lg-5">
+                                    <div class="p-4 p-md-5">
+                                        <div class="h2 fw-bolder">HX711</div>
+                                        <p>UEl HX711 utiliza un convertidor analógico-digital (ADC) de alta resolución para convertir las señales analógicas provenientes de los sensores de carga en señales digitales que pueden ser procesadas por un microcontrolador. Tiene un rango de ganancia programable, lo que permite adaptarse a diferentes tipos de sensores de carga y rangos de peso.</p>
+                                        <a class="stretched-link text-decoration-none" href="https://www.alldatasheet.com/view.jsp?Searchword=Hx711%20datasheet&gad_source=1&gclid=CjwKCAjwvIWzBhAlEiwAHHWgvfRhzVc83fGOGQMVBh0Kcmd2puR5XLQf0vpe2VhI9excx4Naj7qlIxoCK7oQAvD_BwE" target="_blank">
+                                            Read more
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                                    <div class="bg-featured-blog" style="background-image: url('https://orellanaelec.com/wp-content/uploads/2022/03/AB080.jpg'); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- Encoder-->
+                <div class="container px-5">
+                    <h1 class="fw-bolder fs-5 mb-4">Encoder</h1>
+                    <div class="card border-0 shadow rounded-3 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="row gx-0 align-items-center">
+                                <div class="col-lg-8 py-lg-5">
+                                    <div class="p-4 p-md-5">
+                                        <div class="h2 fw-bolder">Ky-040</div>
+                                        <p>UEl KY-040 consiste en un disco giratorio conectado a un codificador óptico. Cuando se gira el disco, el codificador óptico detecta los cambios en la posición y la dirección de giro. Esto permite al microcontrolador determinar la dirección y la velocidad de rotación del eje al que está conectado el módulo.</p>
+                                        <a class="stretched-link text-decoration-none" href="https://www.handsontec.com/dataspecs/module/Rotary%20Encoder.pdf" target="_blank">
+                                            Read more
+                                            <i class="bi bi-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 d-none d-lg-flex justify-content-center">
+                                    <div class="bg-featured-blog" style="background-image: url('https://tresdprinttech.com/wp-content/uploads/2024/02/SEN092.jpg'); height: 200px; width: 100%; background-size: cover; background-position: center;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer-->
+        <footer class="bg-dark py-4 mt-auto">
+            <div class="container px-5">
+                <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                    <div class="col-auto"><div class="small m-0 text-white">Copyright &copy; Your Website 2023</div></div>
+                    <div class="col-auto">
+                        <a class="link-light small" href="#!">Privacy</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Terms</a>
+                        <span class="text-white mx-1">&middot;</span>
+                        <a class="link-light small" href="#!">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js'%}"></script>
+    </body>
+</html>
