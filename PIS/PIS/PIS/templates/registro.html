@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .container form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container form input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .container form button {
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container form button:hover {
+            background-color: #0056b3;
+        }
+
+        .container .link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container .link a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        .container .link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function register(event) {
+            event.preventDefault();
+            // Aquí se podría agregar lógica para la validación de datos
+            window.location.href = "login.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form onsubmit="register(event)">
+            <input type="text" name="username" placeholder="Nombre de usuario" required>
+            <input type="email" name="email" placeholder="Correo electrónico" required>
+            <input type="password" name="password" placeholder="Contraseña" required>
+            <button type="submit">Registrarse</button>
+        </form>
+        <div class="link">
+            <a href="login.html">¿Ya tienes una cuenta? Inicia sesión</a>
+        </div>
+    </div>
+</body>
+</html>
