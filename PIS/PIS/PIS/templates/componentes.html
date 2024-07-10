@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .component {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+
+        .component-title {
+            font-weight: bold;
+        }
+
+        .component-details {
+            display: none;
+            padding: 10px 0;
+        }
+    </style>
+    <script>
+        function toggleDetails(event) {
+            var details = event.currentTarget.nextElementSibling;
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var titles = document.getElementsByClassName('component-title');
+            for (var i = 0; i < titles.length; i++) {
+                titles[i].addEventListener('click', toggleDetails);
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Componentes</h1>
+
+        <div class="component">
+            <div class="component-title">1. Servomotores</div>
+            <div class="component-details">
+                <p>Un servomotor es un motor eléctrico que posibilita el control de la velocidad y la posición del eje en rotación, conocido también como dirección o giro del rotor.
+                A diferencia de los motores convencionales, los servos no completan un giro de 360 grados, aunque existen modelos recientes que sí ofrecen esta capacidad; su rango se limita a un giro de 180 grados en dirección izquierda o derecha, es decir, en los modos de ida y retorno.
+                Posee tres cables, dos sirven para alimentación y el tercero aplica a los pulsos de control para que se pueda colocar en la posición requerida.</p>
+            </div>
+        </div>
+
+        <div class="component">
+            <div class="component-title">2. Servomotor: Sg90 Micro Servo</div>
+            <div class="component-details">
+                <p>El MG90S es un micro servo de alto rendimiento y precisión utilizado comúnmente en aplicaciones de robótica, modelismo y proyectos de automatización.</p>
+                <ul>
+                    <li>Voltaje de operación: 4.8V a 6.0V</li>
+                    <li>Torque: Hasta 2.5 kg-cm a 4.8V y 3.0 kg-cm a 6.0V</li>
+                    <li>Velocidad: 0.10 segundos/60° a 4.8V y 0.08 segundos/60° a 6.0V</li>
+                    <li>Peso: Aproximadamente 13.4 gramos</li>
+                    <li>Dimensiones: 22.8mm x 12.2mm x 28.5mm</li>
+                    <li>Tipo de engranajes: Metálicos, que ofrecen mayor durabilidad y resistencia en comparación con los engranajes plásticos</li>
+                    <li>Ángulo de operación: 180 grados (posiblemente menos dependiendo del controlador)</li>
+                    <li>Tipo de motor: Motor de escobillas (brushed)</li>
+                    <li>Conexión: Cable de 3 pines con conector estándar (señal, VCC, GND)</li>
+                </ul>
+            </div>
+        </div>
+
+      
+            <div class="component">
+                <div class="component-title">3. Cables </div>
+                <div class="component-details">
+                    <p> Macho - Hembra: Se utiliza en el tablero de protoboard haciendo posible la conexión de dos elementos, usualmente, uno ingresado en dicho tablero y el extremo opuesto al sensor.
+                        Se los utiliza mayormente en proyectos con Arduino.
+                                Características:
+                        Compatible con Arduino.
+                        Pin 2.54 mm.
+                        Longitud 20 cm.
+                        Color. (café, rojo, naranja, gris, blanco, morado, amarillo, verde, azul, negro).
+                        Permite la conexión directa entre dos dispositivos compatibles.
+                        
+                        Macho - Macho: Es un cable que tiene conectores macho en ambos extremos, se utilizan para establecer una conexión directa entre dos dispositivos que tengan puertos o entradas compatibles.
+                        Características:
+                        Compatible con Arduino y otros dispositivos electrónicos.
+                        Pin 2.54 mm.
+                        Longitud 20 cm.
+                        Color. (café, rojo, naranja, gris, blanco, morado, amarillo, verde, azul, negro).
+                        El material conductor, generalmente, es cobre o cobre estañado para una buena conductividad.
+                        Permite la conexión directa entre dos dispositivos compatibles.</p>
+                </div>
+            </div>
+
+        
+        
+                <div class="component">
+                    <div class="component-title">4. Motor Paso a Paso</div>
+                    <div class="component-details">
+                        <p> Es un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos.
+                            MOTOR PASO A PASO 28BYJ-48
+                            Es un pequeño motor paso a paso adecuado para una amplia gama de aplicaciones.
+                            Siendo un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos.
+                            Características:
+                            Tensión nominal: 5 VDC.
+                            Número de Fase 4.
+                            Relación de variación de velocidad 1/64.
+                            Frecuencia 100 Hz.
+                            Frecuencia de tracción inactiva > 600 Hz.
+                            Frecuencia de tracción en ralentí > 1000 Hz.
+                            Par de tracción > 34.3 mN.m (120 Hz).
+                            Par de autoposicionamiento > 34.3 mN.m.
+                            Par de fricción 600 - 1200 gf.cm.
+                            Resistencia aislada > 10MΩ (500V).
+                            Potencia eléctrica aislada 600  VAC/1mA/1s.
+                            Grado de aislamiento A.
+                            Modelo 28BYJ-48-5V.</p>
+                    </div>
+                </div>
+
+                <div class="component">
+                    <div class="component-title">5. Placa Microcontroladora del Motor Paso a Paso - ULN2003A</div>
+                    <div class="component-details">
+                        <p>Es un dispositivo electrónico que controla y dirige el funcionamiento de un motor paso a paso, estas placas suelen incluir circuitos integrados y firmware especializado para gestionar la secuencia de pulsos necesaria para que el motor realice movimientos precisos y controlados.
+                            Se utiliza en aplicaciones donde se requiere posicionamiento preciso, como impresoras 3D, máquinas CNC y robots.
+                            Características:
+                            Compatible con diversos modelos de motores paso a paso.
+                            El voltaje de entrada, generalmente entre 8V y 35V, dependiendo del controlador específico.
+                            El voltaje de salida es variable, normalmente hasta 2A por fase para ciertos controladores.
+                            Permite la conexión con un microcontrolador o computadora a través de interfaces como USB, UART o 12C.
+                            Proporcionan pines para la conexión de sensores, interruptores u otros dispositivos externos.
+                            Pueden ser diseñados para trabajar con varios tipos y tamaños de motores paso a paso.
+                            Permite ajustar la resolución de paso para controlar la precisión de los movimientos del motor.</p>
+                    </div>
+                </div>
+
+                <div class="component">
+                    <div class="component-title">6. Resistencias 220 Ohmios</div>
+                    <div class="component-details">
+                        <p> Las resistencias eléctricas son componentes semiconductores su principal función es limitar el paso de corriente en un circuito eléctrico.
+                            Características:
+                            Indica la cantidad máxima de energía que la resistencia puede disipar sin dañarse.
+                            Su tolerancia puede ser de 5%.
+                            Pueden ser de película de carbono, metálica u otros, cada uno con propiedades eléctricas específicas.</p>
+                    </div>
+                </div>
+                
+                <div class="component">
+                    <div class="component-title">7. Fuente de Poder </div>
+                    <div class="component-details">
+                        <p>Para este proyecto se utilizan dos fuentes de 5V. Una de estas fuentes se emplea específicamente para alimentar la placa Arduino, asegurando un suministro estable y dedicado para el microcontrolador y sus componentes integrados. Esto ayuda a mantener el funcionamiento fiable del Arduino, evitando interferencias o fluctuaciones de energía que podrían afectar su rendimiento.
+                            Con la otra fuente de 5V se destina a alimentar el resto de los motores. Separar la alimentación del Arduino de la de los motores ayuda a prevenir posibles interferencias electromagnéticas y caídas de voltaje que los motores pueden causar debido a su consumo de corriente variable y elevado. Esto garantiza que tanto el Arduino como los motores operen de manera eficiente, manteniendo estabilidad e integridad del sistema es un conjunto .</p>
+                    </div>
+                </div>
+
+                <div class="component">
+                    <div class="component-title">8. Multímetro Digital </div>
+                    <div class="component-details">
+                        <p>Es una herramienta de prueba usada para medir dos o más valores eléctricos, principalmente tensión (voltios), corriente (amperios) y resistencia (ohmios).
+                            Características:
+                            Presenta mediciones en una pantalla de cristal que muestra números para facilitar la lectura.
+                            Permite seleccionar la función de medición deseada como voltaje, corriente o resistencia.
+                            Indica si la polaridad de la conexión es positiva o negativa.
+                            Ofrece mediciones de voltaje (AC/DC), corriente (AC/DC).
+                            La medición de frecuencia es en hertzios (Hz).</p>
+                    </div>
+                </div>
+        
+                <div class="component">
+                    <div class="component-title">9. Sensor de peso HX711 </div>
+                    <div class="component-details">
+                        <p>Características
+                            Rango de carga :5kg.
+                            Salida nominal: 1,0 ± 0.15mV / V.
+                            Repetibilidad: 0,03% FS.
+                            Impedancia de entrada: 1115 -10% Ω.
+                            Impedancia de salida: 1000 10% Ω.
+                            Resistencia de aislamiento:> = 1000 MΩ.
+                            Tasa Sobrecarga segura: 150% FS.
+                            Tasa de sobrecarga final: 200% FS.
+                            Voltaje de funcionamiento: 3VDC ~ 14 VDC.
+                            Material: Aleación de aluminio.
+                            Grado de protección: IP65.
+                            Conexión:
+                            Rojo: Alimentación.
+                            Negro: Fuente -.
+                            Verde: Señal.
+                            Blanco: Señal. </p>
+                    </div>
+                </div>
+        
+    
+        <div class="component">
+            <div class="component-title">8. Protoboards</div>
+            <div class="component-details">
+                <p>Es una herramienta esencial para la creación y prueba de circuitos electrónicos sin necesidad de soldadura.
+                Está compuesto por una placa perforada con orificios conectados internamente, lo que permite insertar componentes electrónicos y cables de manera temporal.
+                Normalmente estas placas son usadas para realizar pruebas experimentales. Si la prueba resulta satisfactoria el circuito se construye de una forma más permanente para evitar el riesgo de que algún componente pueda desconectarse. En caso de que la prueba no sea satisfactoria, puede modificarse el circuito fácilmente.</p>
+                <p>Los protoboards tienen tres partes:</p>
+                <ul>
+                    <li>El canal central: Ubicado en la parte media, aquí se conectan los circuitos integrados para mantener aislados los pines de ambos lados del circuito integrado.</li>
+                    <li>Los buses: Se encuentran a los lados del protoboard, y generalmente se emplean para conectar la tierra del circuito y su voltaje de alimentación. La mayoría de las veces los buses están indicados con franjas color negro o azul para indicar el bus de voltaje positivo.</li>
+                    <li>Las pistas: El resto de los orificios del protoboard pertenecen a las pistas, las cuales, están separadas por filas, y estas filas están indicadas con números y las columnas están indicadas con letras.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

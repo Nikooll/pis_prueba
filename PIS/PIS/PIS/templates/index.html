@@ -193,16 +193,6 @@
         function closeAboutModal() {
             document.getElementById('aboutModal').style.display = 'none';
         }
-
-        // Desplazamiento suave
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
     </script>
 </head>
 <body>
@@ -217,6 +207,7 @@
             <a href="#ubicacion">Ubicación</a>
             <a href="#" onclick="openContactModal()">Contacto</a>
             <a href="#" onclick="openAboutModal()">Acerca de Nosotros</a>
+            <a href="componentes.html" target="_blank">Componentes</a>
         </div>
         <a href="login.html" class="login">Regístrate o Inicia Sesión</a>
     </div>
@@ -265,3 +256,4 @@
 
 </body>
 </html>
+
