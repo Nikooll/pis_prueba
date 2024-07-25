@@ -55,6 +55,15 @@
             text-decoration: none;
             font-weight: bold;
         }
+
+        .component img {
+            display: block; 
+            width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+            height: auto; 
+            margin: 0 auto 10px; 
+            border-radius: 5px; 
+            box-shadow: 0 0 5px rgba(170, 19, 127, 0.1); 
+        }
     </style>
     <script>
         function toggleDetails(event) {
@@ -81,13 +90,14 @@
         <div class="component">
             <div class="component-title">1. Servomotores</div>
             <div class="component-details">
+                <img src="imagenes/Servomotor.jpg" alt="Servomotores">
                 <p>Un servomotor es un motor eléctrico que posibilita el control de la velocidad y la posición del eje en rotación, conocido también como dirección o giro del rotor. A diferencia de los motores convencionales, los servos no completan un giro de 360 grados, aunque existen modelos recientes que sí ofrecen esta capacidad; su rango se limita a un giro de 180 grados en dirección izquierda o derecha, es decir, en los modos de ida y retorno. Posee tres cables, dos sirven para alimentación y el tercero aplica a los pulsos de control para que se pueda colocar en la posición requerida.</p>
             </div>
         </div>
-
         <div class="component">
             <div class="component-title">2. Servomotor: Sg90 Micro Servo</div>
             <div class="component-details">
+                <img src="imagenes/Sg90.jpg" alt="Servomotor: Sg90 Micro Servo">
                 <p>El MG90S es un micro servo de alto rendimiento y precisión utilizado comúnmente en aplicaciones de robótica, modelismo y proyectos de automatización.</p>
                 <ul>
                     <strong>Características:</strong>
@@ -108,6 +118,7 @@
         <div class="component">
             <div class="component-title">3. Cables</div>
             <div class="component-details">
+                <img src="imagenes/cable.jpg" alt="Cables">
                 <p>Macho - Hembra: Se utiliza en el tablero de protoboard haciendo posible la conexión de dos elementos, usualmente, uno ingresado en dicho tablero y el extremo opuesto al sensor. Se los utiliza mayormente en proyectos con Arduino.</p>
                 <ul>
                     <strong>Características:</strong>
@@ -132,6 +143,7 @@
         <div class="component">
             <div class="component-title">4. Motor Paso a Paso</div>
             <div class="component-details">
+                <img src="imagenes/motor_paso.jpg" alt="Motor Paso a Paso">
                 <p>Es un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos. MOTOR PASO A PASO 28BYJ-48 Es un pequeño motor paso a paso adecuado para una amplia gama de aplicaciones. Siendo un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos.</p>
                 <ul>
                     <strong>Características:</strong>
@@ -156,6 +168,7 @@
         <div class="component">
             <div class="component-title">5. Placa Microcontroladora del Motor Paso a Paso - ULN2003A</div>
             <div class="component-details">
+                <img src="imagenes/placa.jpg" alt="Placa Microcontroladora del Motor Paso a Paso - ULN2003A">
                 <p>Es un dispositivo electrónico que controla y dirige el funcionamiento de un motor paso a paso, estas placas suelen incluir circuitos integrados y firmware especializado para gestionar la secuencia de pulsos necesaria para que el motor realice movimientos precisos y controlados. Se utiliza en aplicaciones donde se requiere posicionamiento preciso, como impresoras 3D, máquinas CNC y robots.</p>
                 <ul>
                     <strong>Características:</strong>
@@ -174,6 +187,7 @@
         <div class="component">
             <div class="component-title">6. Resistencias 220 Ohmios</div>
             <div class="component-details">
+                <img src="imagenes/resistencia.jpg" alt="Resistencias 220 Ohmios">
                 <p>Las resistencias eléctricas son componentes semiconductores cuya principal función es limitar el paso de corriente en un circuito eléctrico.</p>
                 <ul>
                     <strong>Características:</strong>
@@ -187,6 +201,7 @@
         <div class="component">
             <div class="component-title">7. Fuente de Poder</div>
             <div class="component-details">
+                <img src="imagenes/fuente_poder.jpg" alt="Fuente de Poder">
                 <p>Para este proyecto se utilizan dos fuentes de 5V. Una de estas fuentes se emplea específicamente para alimentar la placa Arduino, asegurando un suministro estable y dedicado para el microcontrolador y sus componentes integrados. Esto ayuda a mantener el funcionamiento fiable del Arduino, evitando interferencias o fluctuaciones de energía que podrían afectar su rendimiento. Con la otra fuente de 5V se destina a alimentar el resto de los motores. Separar la alimentación del Arduino de la de los motores ayuda a prevenir posibles interferencias electromagnéticas y caídas de voltaje que los motores pueden causar debido a su consumo de corriente variable y elevado. Esto garantiza que tanto el Arduino como los motores operen de manera eficiente, manteniendo estabilidad e integridad del sistema en su conjunto.</p>
             </div>
         </div>
@@ -194,6 +209,7 @@
         <div class="component">
             <div class="component-title">8. Multímetro Digital</div>
             <div class="component-details">
+                <img src="imagenes/multimetro.jpg" alt="Multímetro Digital">
                 <p>Es una herramienta de prueba usada para medir dos o más valores eléctricos, principalmente tensión (voltios), corriente (amperios) y resistencia (ohmios).</p>
                 <ul>
                     <strong>Características:</strong>
@@ -209,6 +225,7 @@
         <div class="component">
             <div class="component-title">9. Sensor de peso HX711</div>
             <div class="component-details">
+                <img src="imagenes/sensor.png" alt="Sensor de peso HX711">
                 <ul>
                     <strong>Características:</strong>
                     <li>Rango de carga: 5kg.</li>
@@ -234,6 +251,7 @@
         <div class="component">
             <div class="component-title">10. Servo MG995 </div>
             <div class="component-details">
+                <img src="imagenes/MG995.jpg" alt="Servo MG995">
                 <ul>
                     <strong>Características:</strong>
                     <li>Peso: 55 gramos.</li>
@@ -252,6 +270,7 @@
         <div class="component">
             <div class="component-title">11. ESP32-CAM </div>
             <div class="component-details">
+                <img src="imagenes/ESP32.jpg" alt="ESP32-CAM">
                 <ul>
                     <strong>Características:</strong>
                     <li>Velocidad de reloj de hasta 160 MHz, potencia informática resumida de hasta 600 DMIPS.</li>
@@ -282,6 +301,7 @@
         <div class="component">
             <div class="component-title">12. Madera MDF</div>
             <div class="component-details">
+                <img src="imagenes/MDF.jpg" alt="Madera MDF">
                 <p>Este tipo de tablero se fabrica principalmente a partir de fibras de madera, que representan aproximadamente el 85% de su composición, junto con resinas sintéticas comprimidas. Esta combinación confiere al tablero una densidad mayor en comparación con los aglomerados tradicionales o la madera contrachapada.
                     Una de las características más importantes del MDF es su densidad, que se refiere al peso por metro cuadrado del material. La densidad media del MDF oscila entre 500 y 800 kg/m3; densidades superiores a este rango se consideran de alta densidad, mientras que densidades inferiores se clasifican como baja densidad.</p>
             </div>
@@ -289,6 +309,7 @@
         <div class="component">
             <div class="component-title">13. Tornillería</div>
             <div class="component-details">
+                <img src="imagenes/tornilleria.jpg" alt="Tornillería">
                 <ul>
                 <p>Utilizados para unir las piezas de madera, de los cuales, se utilizaron los siguientes:</p>
                      <li>Tornillo ⅛ de pulgada de diámetro (aproximadamente 3.175 mm.)</li>
@@ -299,6 +320,7 @@
         <div class="component">
             <div class="component-title">14. Protoboards</div>
             <div class="component-details">
+                <img src="imagenes/protoboard.jpg" alt="Protoboards">
                 <p>Es una herramienta esencial para la creación y prueba de circuitos electrónicos sin necesidad de soldadura. Está compuesto por una placa perforada con orificios conectados internamente, lo que permite insertar componentes electrónicos y cables de manera temporal. Normalmente estas placas son usadas para realizar pruebas experimentales. Si la prueba resulta satisfactoria el circuito se construye de una forma más permanente para evitar el riesgo de que algún componente pueda desconectarse. En caso de que la prueba no sea satisfactoria, puede modificarse el circuito fácilmente.</p>
                 <p>Los protoboards tienen tres partes:</p>
                 <ul>
