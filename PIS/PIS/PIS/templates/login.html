@@ -19,14 +19,16 @@
         .container {
             background-color: #fff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 320px;
+            text-align: center;
         }
 
         .container h2 {
-            text-align: center;
             margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
         }
 
         .container form {
@@ -35,37 +37,74 @@
         }
 
         .container form input {
-            padding: 10px;
-            margin-bottom: 10px;
+            padding: 12px;
+            margin-bottom: 15px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 16px;
         }
 
         .container form button {
-            padding: 10px;
+            padding: 12px;
             background-color: #007BFF;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, transform 0.2s;
         }
 
         .container form button:hover {
             background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .container form button:active {
+            background-color: #004494;
+            transform: translateY(0);
         }
 
         .container .link {
-            text-align: center;
-            margin-top: 10px;
+            margin-top: 15px;
         }
 
         .container .link a {
             color: #007BFF;
             text-decoration: none;
+            font-size: 16px;
         }
 
         .container .link a:hover {
             text-decoration: underline;
+        }
+
+        .g-signin-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .g-signin2 {
+            width: 100%;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .g-signin2 .abcRioButton {
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s, transform 0.2s;
+        }
+
+        .g-signin2 .abcRioButton:hover {
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .g-signin2 .abcRioButton:active {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transform: translateY(0);
         }
     </style>
     <script>
@@ -73,6 +112,10 @@
             event.preventDefault();
             // Aquí se podría agregar lógica para la validación de datos
             window.location.href = "index.html"; // Suponiendo que el archivo principal es index.html
+        }
+        
+        function onSignIn(googleUser) {
+            // Lógica de inicio de sesión de Google aquí
         }
     </script>
 </head>
@@ -86,6 +129,11 @@
         </form>
         <div class="link">
             <a href="registro.html">¿No tienes una cuenta? Regístrate</a>
+        </div>
+        <div class="g-signin-container">
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <meta name="google-signin-client_id" content="880670946018-qmbeg7qnfme60e0e0es7rd4kh72ibnot.apps.googleusercontent.com">
         </div>
     </div>
 </body>
