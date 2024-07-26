@@ -6,18 +6,30 @@
     <title>Inicio de Sesión</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial Black";
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background: url('Login.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
 
         .container {
-            background-color: #fff;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -45,8 +57,13 @@
         }
 
         .container form button {
+<<<<<<< HEAD
             padding: 12px;
             background-color: #007BFF;
+=======
+            padding: 10px;
+            background-color: #7c08bc;
+>>>>>>> 1f94649628dc3dcd6f9a0459a7b7b02dcb048fe4
             color: white;
             border: none;
             border-radius: 8px;
@@ -56,6 +73,7 @@
         }
 
         .container form button:hover {
+<<<<<<< HEAD
             background-color: #0056b3;
             transform: translateY(-2px);
         }
@@ -63,6 +81,9 @@
         .container form button:active {
             background-color: #004494;
             transform: translateY(0);
+=======
+            background-color: #571f7e;
+>>>>>>> 1f94649628dc3dcd6f9a0459a7b7b02dcb048fe4
         }
 
         .container .link {
@@ -70,7 +91,7 @@
         }
 
         .container .link a {
-            color: #007BFF;
+            color: #504d4d;
             text-decoration: none;
             font-size: 16px;
         }
@@ -79,6 +100,7 @@
             text-decoration: underline;
         }
 
+<<<<<<< HEAD
         .g-signin-container {
             margin-top: 20px;
             display: flex;
@@ -118,11 +140,29 @@
             // Lógica de inicio de sesión de Google aquí
         }
     </script>
+=======
+        .container .back-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container .back-link a {
+            color: #504d4d;
+            text-decoration: none;
+        }
+
+        .container .back-link a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+>>>>>>> 1f94649628dc3dcd6f9a0459a7b7b02dcb048fe4
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
         <h2>Iniciar Sesión</h2>
-        <form onsubmit="login(event)">
+        <form action="/login" method="post">
             <input type="text" name="username" placeholder="Nombre de usuario" required>
             <input type="password" name="password" placeholder="Contraseña" required>
             <button type="submit">Iniciar Sesión</button>
@@ -130,10 +170,15 @@
         <div class="link">
             <a href="registro.html">¿No tienes una cuenta? Regístrate</a>
         </div>
+<<<<<<< HEAD
         <div class="g-signin-container">
             <script src="https://apis.google.com/js/platform.js" async defer></script>
             <div class="g-signin2" data-onsuccess="onSignIn"></div>
             <meta name="google-signin-client_id" content="880670946018-qmbeg7qnfme60e0e0es7rd4kh72ibnot.apps.googleusercontent.com">
+=======
+        <div class="back-link">
+            <a href="index.html">Inicio</a>
+>>>>>>> 1f94649628dc3dcd6f9a0459a7b7b02dcb048fe4
         </div>
     </div>
 </body>

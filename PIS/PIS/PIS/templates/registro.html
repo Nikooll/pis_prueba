@@ -6,18 +6,30 @@
     <title>Registro de Usuario</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "Arial Black";
             margin: 0;
             padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background: url('Registro.jpeg') no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: -1;
         }
 
         .container {
-            background-color: #fff;
+            position: relative;
+            background-color: rgba(255, 255, 255, 0.8);
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -43,7 +55,7 @@
 
         .container form button {
             padding: 10px;
-            background-color: #007BFF;
+            background-color: #7c08bc;
             color: white;
             border: none;
             border-radius: 5px;
@@ -51,7 +63,7 @@
         }
 
         .container form button:hover {
-            background-color: #0056b3;
+            background-color: #571f7e;
         }
 
         .container .link {
@@ -60,11 +72,25 @@
         }
 
         .container .link a {
-            color: #007BFF;
+            color: #504d4d;
             text-decoration: none;
         }
 
         .container .link a:hover {
+            text-decoration: underline;
+        }
+
+        .container .back-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .container .back-link a {
+            color: #504d4d;
+            text-decoration: none;
+        }
+
+        .container .back-link a:hover {
             text-decoration: underline;
         }
     </style>
@@ -77,6 +103,7 @@
     </script>
 </head>
 <body>
+    <div class="overlay"></div>
     <div class="container">
         <h2>Registro</h2>
         <form onsubmit="register(event)">
@@ -87,6 +114,9 @@
         </form>
         <div class="link">
             <a href="login.html">¿Ya tienes una cuenta? Inicia sesión</a>
+        </div>
+        <div class="back-link">
+            <a href="index.html">Inicio</a>
         </div>
     </div>
 </body>
