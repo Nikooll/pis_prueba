@@ -18,7 +18,7 @@
 
         h1 {
             text-align: center;
-            color: #9a1b74; /* Morado fuerte para el texto */
+            color: #9a1b74; 
             background-color: #f3e5f5;
             padding: 10px 0;
             margin: 0;
@@ -31,7 +31,7 @@
             margin: 10px 0;
             background-color: white; /* Fondo blanco para los recuadros */
             box-sizing: border-box;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para los recuadros */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
         }
 
         .component-title {
@@ -45,7 +45,7 @@
         }
 
         .component:nth-child(even) {
-            background-color: #fafafa; /* Color de fondo para elementos pares */
+            background-color: #fafafa; 
         }
 
         .datasheet-link {
@@ -58,7 +58,7 @@
 
         .component img {
             display: block; 
-            width: 200px; /* Ajusta el tamaño de la imagen según sea necesario */
+            width: 200px; /* Ajusta el tamaño de la imagen */
             height: auto; 
             margin: 0 auto 10px; 
             border-radius: 5px; 
@@ -91,14 +91,14 @@
             <div class="component-title">1. Servomotores</div>
             <div class="component-details">
                 <img src="imagenes/Servomotor.jpg" alt="Servomotores">
-                <p>Un servomotor es un motor eléctrico que posibilita el control de la velocidad y la posición del eje en rotación, conocido también como dirección o giro del rotor. A diferencia de los motores convencionales, los servos no completan un giro de 360 grados, aunque existen modelos recientes que sí ofrecen esta capacidad; su rango se limita a un giro de 180 grados en dirección izquierda o derecha, es decir, en los modos de ida y retorno. Posee tres cables, dos sirven para alimentación y el tercero aplica a los pulsos de control para que se pueda colocar en la posición requerida.</p>
+                <p> Son motores eléctricos que posibilita el control de la velocidad y la posición del eje en rotación, conocido también como dirección o giro del rotor. A diferencia de los motores convencionales, los servos no completan un giro de 360 grados, aunque existen modelos recientes que sí ofrecen esta capacidad; su rango se limita a un giro de 180 grados en dirección izquierda o derecha, es decir, en los modos de ida y retorno. Posee tres cables, dos sirven para alimentación y el tercero aplica a los pulsos de control para que se pueda colocar en la posición requerida.</p>
             </div>
         </div>
         <div class="component">
             <div class="component-title">2. Servomotor: Sg90 Micro Servo</div>
             <div class="component-details">
                 <img src="imagenes/Sg90.jpg" alt="Servomotor: Sg90 Micro Servo">
-                <p>El MG90S es un micro servo de alto rendimiento y precisión utilizado comúnmente en aplicaciones de robótica, modelismo y proyectos de automatización.</p>
+                <p>Es un micro servo de alto rendimiento y precisión utilizado comúnmente en aplicaciones de robótica, modelismo y proyectos de automatización.</p>
                 <ul>
                     <strong>Características:</strong>
                     <li>Voltaje de operación: 4.8V a 6.0V</li>
@@ -141,73 +141,15 @@
         </div>
 
         <div class="component">
-            <div class="component-title">4. Motor Paso a Paso</div>
-            <div class="component-details">
-                <img src="imagenes/motor_paso.jpg" alt="Motor Paso a Paso">
-                <p>Es un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos. MOTOR PASO A PASO 28BYJ-48 Es un pequeño motor paso a paso adecuado para una amplia gama de aplicaciones. Siendo un dispositivo electromecánico que convierte una serie de impulsos eléctricos en desplazamientos angulares discretos.</p>
-                <ul>
-                    <strong>Características:</strong>
-                    <li>Tensión nominal: 5 VDC.</li>
-                    <li>Número de Fase 4.</li>
-                    <li>Relación de variación de velocidad 1/64.</li>
-                    <li>Frecuencia 100 Hz.</li>
-                    <li>Frecuencia de tracción inactiva > 600 Hz.</li>
-                    <li>Frecuencia de tracción en ralentí > 1000 Hz.</li>
-                    <li>Par de tracción > 34.3 mN.m (120 Hz).</li>
-                    <li>Par de autoposicionamiento > 34.3 mN.m.</li>
-                    <li>Par de fricción 600 - 1200 gf.cm.</li>
-                    <li>Resistencia aislada > 10MΩ (500V).</li>
-                    <li>Potencia eléctrica aislada 600 VAC/1mA/1s.</li>
-                    <li>Grado de aislamiento A.</li>
-                    <li>Modelo 28BYJ-48-5V.</li>
-                </ul>
-                <a href="https://www.bolanosdj.com.ar/MOVIL/ARDUINO2/motorpap.pdf" class="datasheet-link" target="_blank">Ver más</a>
-            </div>
-        </div>
-
-        <div class="component">
-            <div class="component-title">5. Placa Microcontroladora del Motor Paso a Paso - ULN2003A</div>
-            <div class="component-details">
-                <img src="imagenes/placa.jpg" alt="Placa Microcontroladora del Motor Paso a Paso - ULN2003A">
-                <p>Es un dispositivo electrónico que controla y dirige el funcionamiento de un motor paso a paso, estas placas suelen incluir circuitos integrados y firmware especializado para gestionar la secuencia de pulsos necesaria para que el motor realice movimientos precisos y controlados. Se utiliza en aplicaciones donde se requiere posicionamiento preciso, como impresoras 3D, máquinas CNC y robots.</p>
-                <ul>
-                    <strong>Características:</strong>
-                    <li>Alimentación: 5V.</li>
-                    <li>Corriente máxima de salida por canal: 500mA.</li>
-                    <li>Chip controlador: ULN2003.</li>
-                    <li>Indicadores LED para cada bobina del motor.</li>
-                    <li>Conector de 4 pines para el motor paso a paso.</li>
-                    <li>Interfaz de control: Conexiones para señales de control de microcontroladores.</li>
-                    <li>Dimensiones: 31mm x 35mm x 20mm.</li>
-                </ul>
-                <a href="https://www.alldatasheet.com/view.jsp?Searchword=Uln2003a%20datasheet&gad_source=1&gclid=CjwKCAjwhvi0BhA4EiwAX25uj4lj-ABHGB4THcv11IVlfJYxWysJLSrolDFSPOyF1VHpbTInO7byyRoCrFIQAvD_BwE" class="datasheet-link" target="_blank">Ver más</a>
-            </div>
-        </div>
-
-        <div class="component">
-            <div class="component-title">6. Resistencias 220 Ohmios</div>
-            <div class="component-details">
-                <img src="imagenes/resistencia.jpg" alt="Resistencias 220 Ohmios">
-                <p>Las resistencias eléctricas son componentes semiconductores cuya principal función es limitar el paso de corriente en un circuito eléctrico.</p>
-                <ul>
-                    <strong>Características:</strong>
-                    <li>Indica la cantidad máxima de energía que la resistencia puede disipar sin dañarse.</li>
-                    <li>Su tolerancia puede ser de 5%.</li>
-                    <li>Pueden ser de película de carbono, metálica u otros, cada uno con propiedades eléctricas específicas.</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="component">
-            <div class="component-title">7. Fuente de Poder</div>
+            <div class="component-title">4. Fuente de Poder</div>
             <div class="component-details">
                 <img src="imagenes/fuente_poder.jpg" alt="Fuente de Poder">
-                <p>Para este proyecto se utilizan dos fuentes de 5V. Una de estas fuentes se emplea específicamente para alimentar la placa Arduino, asegurando un suministro estable y dedicado para el microcontrolador y sus componentes integrados. Esto ayuda a mantener el funcionamiento fiable del Arduino, evitando interferencias o fluctuaciones de energía que podrían afectar su rendimiento. Con la otra fuente de 5V se destina a alimentar el resto de los motores. Separar la alimentación del Arduino de la de los motores ayuda a prevenir posibles interferencias electromagnéticas y caídas de voltaje que los motores pueden causar debido a su consumo de corriente variable y elevado. Esto garantiza que tanto el Arduino como los motores operen de manera eficiente, manteniendo estabilidad e integridad del sistema en su conjunto.</p>
+                <p>Para este proyecto se utilizó una fuente de 5V y 5A. Esta fuente será la que va a alimentar todo el circuito y con la cual va a funcionar el brazo robótico.</p>
             </div>
         </div>
 
         <div class="component">
-            <div class="component-title">8. Multímetro Digital</div>
+            <div class="component-title">5. Multímetro Digital</div>
             <div class="component-details">
                 <img src="imagenes/multimetro.jpg" alt="Multímetro Digital">
                 <p>Es una herramienta de prueba usada para medir dos o más valores eléctricos, principalmente tensión (voltios), corriente (amperios) y resistencia (ohmios).</p>
@@ -223,7 +165,35 @@
         </div>
 
         <div class="component">
-            <div class="component-title">9. Sensor de peso HX711</div>
+            <div class="component-title">6. LCD  </div>
+            <div class="component-details">
+                <img src="imagenes/LCD.jpg" alt="Multímetro Digital">
+                <p> LCD o pantalla de cristal líquido, está conformada por un número de píxeles en color o monocromos colocados delante de una fuente de luz o reflectora, es delgada y plana.
+                    Es un dispositivo empleado para la visualización de contenidos o información de una forma gráfica, mediante caracteres, símbolos o pequeños dibujos, los cuales pueden variar todo esto en función del modelo.</p>
+                
+            </div>
+        </div>
+        <div class="component">
+            <div class="component-title">7. Módulo I2C</div>
+            <div class="component-details">
+                <img src="imagenes/I2C.jpg" alt="Multímetro Digital">
+                <p> El Módulo de interfaz serial I2C permite manejar la pantalla LCD de una manera fácil.
+                    Esta placa tiene un chip I2C PCF8574 que convierte datos en serie I2C a datos paralelos para la pantalla LCD.</p>
+                    <ul>
+                        <strong>Especificaciones:</strong>
+                        <li>Interfaz: Conexión serial SPI.</li>
+                        <li>Voltaje de Operación: 2.7V a 3.3V.</li>
+                        <li>Temperatura de Operación: -10 a 70 grados Celsius.</li>
+                        <li>Tamaño: 45x45x45 mm.</li>
+                        <li>Controlador LCD: Philips PCD8544.</li>
+                        <li>Dimensiones: 45mm x 45mm.</li>
+                    </ul>
+            </div>
+        </div>
+
+
+        <div class="component">
+            <div class="component-title">8. Sensor de peso HX711</div>
             <div class="component-details">
                 <img src="imagenes/sensor.png" alt="Sensor de peso HX711">
                 <ul>
@@ -249,7 +219,7 @@
             </div>
         </div>
         <div class="component">
-            <div class="component-title">10. Servo MG995 </div>
+            <div class="component-title">9. Servo MG995 </div>
             <div class="component-details">
                 <img src="imagenes/MG995.jpg" alt="Servo MG995">
                 <ul>
@@ -268,7 +238,7 @@
             </div>
         </div>
         <div class="component">
-            <div class="component-title">11. ESP32-CAM </div>
+            <div class="component-title">10. ESP32-CAM </div>
             <div class="component-details">
                 <img src="imagenes/ESP32.jpg" alt="ESP32-CAM">
                 <ul>
@@ -299,7 +269,7 @@
         </div>
 
         <div class="component">
-            <div class="component-title">12. Madera MDF</div>
+            <div class="component-title">11. Madera MDF</div>
             <div class="component-details">
                 <img src="imagenes/MDF.jpg" alt="Madera MDF">
                 <p>Este tipo de tablero se fabrica principalmente a partir de fibras de madera, que representan aproximadamente el 85% de su composición, junto con resinas sintéticas comprimidas. Esta combinación confiere al tablero una densidad mayor en comparación con los aglomerados tradicionales o la madera contrachapada.
@@ -307,7 +277,7 @@
             </div>
         </div>
         <div class="component">
-            <div class="component-title">13. Tornillería</div>
+            <div class="component-title">12. Tornillería</div>
             <div class="component-details">
                 <img src="imagenes/tornilleria.jpg" alt="Tornillería">
                 <ul>
@@ -318,7 +288,7 @@
             </div>
         </div>
         <div class="component">
-            <div class="component-title">14. Protoboards</div>
+            <div class="component-title">13. Protoboard</div>
             <div class="component-details">
                 <img src="imagenes/protoboard.jpg" alt="Protoboards">
                 <p>Es una herramienta esencial para la creación y prueba de circuitos electrónicos sin necesidad de soldadura. Está compuesto por una placa perforada con orificios conectados internamente, lo que permite insertar componentes electrónicos y cables de manera temporal. Normalmente estas placas son usadas para realizar pruebas experimentales. Si la prueba resulta satisfactoria el circuito se construye de una forma más permanente para evitar el riesgo de que algún componente pueda desconectarse. En caso de que la prueba no sea satisfactoria, puede modificarse el circuito fácilmente.</p>
