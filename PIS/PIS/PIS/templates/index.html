@@ -61,7 +61,7 @@
 
         .navbar .login:hover {
             background-color: #db1ee4;
-            color: #ffffff; /* Mantener el color del texto en blanco */
+            color: #ffffff;
         }
 
         .header {
@@ -130,7 +130,7 @@
             cursor: pointer;
             font-size: 1em;
             transition: background-color 0.3s;
-            font-family: "Arial Black"; /* Añadir el estilo de fuente */
+            font-family: "Arial Black";
         }
 
         .location-container button:hover {
@@ -178,7 +178,6 @@
             text-decoration: none;
             cursor: pointer;
         }
-
     </style>
     <script>
         function toggleLocationDetails() {
@@ -206,7 +205,6 @@
             document.getElementById('aboutModal').style.display = 'none';
         }
 
-        // Desplazamiento suave
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -229,6 +227,7 @@
             <a href="#ubicacion">Ubicación</a>
             <a href="#" onclick="openContactModal()">Contacto</a>
             <a href="#" onclick="openAboutModal()">Nosotros</a>
+            <a href="componentes.html" target="_blank">Componentes</a>
         </div>
         <a href="login.html" class="login">Regístrate o Inicia Sesión</a>
     </div>
