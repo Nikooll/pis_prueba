@@ -16,8 +16,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from BrazoRobotico.views import index, login, registro, componentes, mapa
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('controlBrazo', include('BrazoRobotico.urls'))
+    path('controlBrazo', include('BrazoRobotico.urls')),
+    path('', index, name='index'),
+    path('login/', login, name='login'),
+    path('registro/', registro, name='registro'),
+    path('componentes/', componentes, name='componentes'),
+    path('mapa/', mapa, name='mapa'),
 ]
