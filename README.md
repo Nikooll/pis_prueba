@@ -1,3 +1,4 @@
 # pis_prueba
 
-![image](https://github.com/user-attachments/assets/926ea324-2263-4035-a9e8-a77255750886)
+![image](https://github.com/user-attachments/assets/521eef67-e01c-4fda-8382-9462f4f60e44)
+
